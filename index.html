@@ -1,7 +1,100 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zen's Portfolio</title>
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="import" href="elements/image-caption.html">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<div class="container">
+		<header>
+			<div class = "row">
+				<div class="col-md-6">
+					<img src="images/bulliebee_s.JPG" class="title-logo img-responsive img-border" alt="Bull dog logo">
+				</div>
+				<div class="col-md-6 text-right text-uppercase">
+					<h1 class="title-super text-thin">Zen Sun</h1>
+					<h4>Front-end Padawan</h4>
+					<p class="text-muted text-lowercase">(under Udacity tutelage)</p>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-md-12">
+					<nav class="navbar navbar-default">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">Zen</a>
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="https://github.com/udacity/Appify">Appify</a></li>
+											<li><a href="https://github.com/udacity/Sunflower">Sunflower</a></li>
+											<li><a href="https://github.com/udacity/Bokeh">Bokeh</a></li>
+										</ul>
+									</li>
+								</ul>
+								<ul class="nav navbar-nav navbar-right">
+									<li><a href="#">About</a></li>
+									<li><a href="#">Contact</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class = "row">
+				<div class = "col-md-12">
+					<img src="images/cheetah_s.JPG" srcset="images/cheetah_b.JPG 1024w, images/cheetah_m.JPG 640w, images/cheetah_s.JPG 320w" sizes="100vw" class="img-responsive" alt="Cheetah chase screenshot">
+				</div>
+			</div>
+			<section>
+				<header>
+				<div class = "row">
+					<div class = "col-md-12">
+						<h2 class="text-muted">Featured Work</h2>
+					</div>
+				</div>
+				</header>
+				<div class = "row">
+					<div class = "col-md-4">
+						<image-caption name="Appify" url="https://github.com/udacity/Appify" imgsrc="images/bullie1_s.JPG"></image-caption>
+					</div>
+					<div class = "col-md-4">
+						<image-caption name="Sunflower" url="https://github.com/udacity/Sunflower" imgsrc="images/monkey_s.JPG"></image-caption>
+					</div>
+					<div class = "col-md-4">
+						<image-caption name="Bokeh" url="https://github.com/udacity/Bokeh" imgsrc="images/bullie2_s.JPG"></image-caption>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<footer class="footer text-center text-muted">
+		<p></p>
+		<p>All content by Zen Sun.  Text effect from maketea.co.uk</p>
+	</footer>
 </body>
 </html>

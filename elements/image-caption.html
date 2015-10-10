@@ -1,0 +1,35 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="image-caption">
+<template>
+	<a href="{{url}}">
+		<article class="caption">
+			<img src="{{imgsrc}}" class="caption__media img-responsive center-block" alt="{{name}} screenshot" title="{{name}} screenshot">
+			<div class = "caption__overlay">
+				<h3 class="caption__overlay__title text-uppercase">{{name}}</h3>
+				<p class="caption__overlay__content">{{url}}</p>
+			</div>
+		</article>
+	</a>
+</template>
+
+<script>
+Polymer({
+	is: "image-caption",
+	properties: {
+		name: {
+			type: String,
+			value: "Project Name"
+		},
+		url: {
+			type: String,
+			value: "Project URL"
+		},
+		imgsrc: {
+			type: String,
+			value: "Image src"
+		}
+	}
+});
+</script>
+
+</dom-module>
